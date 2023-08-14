@@ -1,0 +1,15 @@
+{
+  "name": "agile-dev-art-docker-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mate:build": "docker build -f Dockerfile.mate -t docker-mate .",
+    "mate:run": "docker run -p 3389:3389 -p 5902:5902 docker-mate",
+    "cinnamon:build": "docker build -f Dockerfile.cinnamon -t docker-cinnamon .",
+    "cinnamon:run": "docker run -p 3389:3389 -p 5902:5902 docker-cinnamon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
